@@ -11,7 +11,7 @@ export default function Hero() {
         <img
           src={heroBg}
           alt="Arquitectura Exterior Materia Viva"
-          className="w-full h-full object-cover object-[center_25%]"
+          className="w-full h-full  object-[center_25%]"
         />
         {/* Degradado blanco de izquierda a derecha para legibilidad óptima */}
         <div className="absolute inset-0 bg-gradient-to-r from-white via-white/85 sm:via-white/70 to-transparent w-full md:w-3/4 lg:w-3/5" />
@@ -38,10 +38,10 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-            className="text-base sm:text-lg text-[#555555] !leading-[1.4] mb-6 max-w-lg"
+            className="text-base sm:text-lg text-[#555555] !leading-[1.45] mb-6 max-w-lg"
           >
             Pérgolas y decks de lujo para residencias y comercios exigentes.{' '}
-            <strong className="font-semibold text-gray-800">
+            <strong className="font-medium text-gray-800">
               Diseñamos, fabricamos e instalamos en CDMX y Estado de México.
             </strong>
           </motion.p>
@@ -56,7 +56,7 @@ export default function Hero() {
               href="#cotizar"
               whileHover={{ scale: 1.03, x: 3 }}
               whileTap={{ scale: 0.97 }}
-              className="inline-flex items-center gap-3 px-5 py-3 bg-[#8DC63F] hover:bg-[#7CB325] text-white font-bold text-base rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 group"
+              className="inline-flex items-center gap-3 px-5 py-3 bg-[#99c01c] hover:bg-[#7CB325] text-white font-bold text-base rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 group"
             >
               <span>Cotizar Ahora</span>
               <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />

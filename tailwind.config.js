@@ -8,7 +8,7 @@ export default {
     extend: {
       colors: {
         brand: {
-          green: "#8DC63F",
+          green: "#99c01c",
           "green-hover": "#7CB325",
           dark: "#14181F",
           muted: "#555555",

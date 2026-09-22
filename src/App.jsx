@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import StatsCarousel from './components/StatsCarousel';
 import Footer from './components/Footer';
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
       <Navbar />
       <main className="flex-grow">
         <Hero />
-        {/* Próximas secciones irán aquí: Pérgolass, Decks, Reseñas, FAQ */}
+        <StatsCarousel />
       </main>
       <Footer />
     </div>
