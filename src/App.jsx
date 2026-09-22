@@ -5,6 +5,8 @@ import StatsCarousel from './components/StatsCarousel';
 import Pergolas from './components/Pergolas';
 import DecksSection from './components/DecksSection';
 import GoogleReviewsSection from './components/GoogleReviewsSection';
+import FaqSection from './components/FaqSection';
+
 import Footer from './components/Footer';
 
 function App() {
@@ -17,6 +19,7 @@ function App() {
         <Pergolas />
         <DecksSection />
         <GoogleReviewsSection />
+        <FaqSection />
       </main>
       <Footer />
     </div>
