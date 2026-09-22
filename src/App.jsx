@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import StatsCarousel from './components/StatsCarousel';
 import Pergolas from './components/Pergolas';
+import DecksSection from './components/DecksSection';
 import Footer from './components/Footer';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <Hero />
         <StatsCarousel />
         <Pergolas />
+        <DecksSection />
       </main>
       <Footer />
     </div>
