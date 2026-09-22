@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import StatsCarousel from './components/StatsCarousel';
 import Pergolas from './components/Pergolas';
 import DecksSection from './components/DecksSection';
+import GoogleReviewsSection from './components/GoogleReviewsSection';
 import Footer from './components/Footer';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <StatsCarousel />
         <Pergolas />
         <DecksSection />
+        <GoogleReviewsSection />
       </main>
       <Footer />
     </div>
