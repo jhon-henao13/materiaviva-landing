@@ -5,7 +5,7 @@ import heroBg from '../assets/background-hero.png';
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[700px] lg:min-h-screen w-full flex items-end pt-28 pb-12 lg:pt-32 lg:pb-20 overflow-hidden bg-white">
+    <section className="relative min-h-[750px] lg:min-h-screen w-full flex items-end pt-28 pb-12 lg:pt-32 lg:pb-20 overflow-hidden bg-white">
       {/* Background Hero Image con Overlay de Degradado Suave */}
       <div className="absolute inset-0 z-0">
         <img

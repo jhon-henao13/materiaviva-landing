@@ -27,3 +27,12 @@
 .animate-marquee:hover {
   animation-play-state: paused;
 }
+
+/* Ocultar barra de desplazamiento en carrusel móvil */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
