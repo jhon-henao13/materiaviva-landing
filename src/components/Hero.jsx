@@ -5,13 +5,13 @@ import heroBg from '../assets/background-hero.png';
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen w-full flex items-end pt-32 pb-20 overflow-hidden bg-white">
+    <section className="relative min-h-[550px] lg:min-h-screen w-full flex items-end pt-28 pb-12 lg:pt-32 lg:pb-20 overflow-hidden bg-white">
       {/* Background Hero Image con Overlay de Degradado Suave */}
       <div className="absolute inset-0 z-0">
         <img
           src={heroBg}
           alt="Arquitectura Exterior Materia Viva"
-          className="w-full h-full  object-[center_25%]"
+          className="w-full h-full object-cover lg:object-cover object-[center_25%]"
         />
         {/* Degradado blanco de izquierda a derecha para legibilidad óptima */}
         <div className="absolute inset-0 bg-gradient-to-r from-white via-white/85 sm:via-white/70 to-transparent w-full md:w-3/4 lg:w-3/5" />
