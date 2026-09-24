@@ -6,6 +6,9 @@ import logoColor from '../assets/logo.png';
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  
+  // URL constante para los CTAs
+  const whatsappUrl = "https://wa.me/5215545703154?text=Hola%2C%20me%20gustar%C3%ADa%20solicitar%20una%20cotizaci%C3%B3n%20personalizada%20para%20mi%20proyecto%20de%20p%C3%A9rgola%20%2F%20deck.";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -62,7 +65,9 @@ export default function Navbar() {
         {/* Botón Cotizar Ahora Desktop */}
         <div className="hidden md:block">
           <motion.a
-            href="#cotizar"
+            href={whatsappUrl}
+            target="_blank"
+            rel="noopener noreferrer"
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.97 }}
             className="inline-flex items-center justify-center px-6 py-2.5 bg-[#99c01c] hover:bg-[#7CB325] text-white font-semibold text-sm lg:text-base rounded-lg shadow-md hover:shadow-lg transition-all duration-200"
@@ -101,13 +106,18 @@ export default function Navbar() {
                   {link.name}
                 </a>
               ))}
+
+              
               <a
-                href="#cotizar"
+                href={whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={() => setMobileMenuOpen(false)}
-                className="mt-2 text-center py-3 bg-[#99c01c] text-white font-semibold rounded-lg shadow"
+                className="mt-2 text-center py-3 bg-[#99c01c] text-white font-semibold rounded-lg shadow block"
               >
                 Cotizar Ahora
               </a>
+              
             </div>
           </motion.div>
         )}

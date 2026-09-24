@@ -6,12 +6,12 @@ import Pergolas from './components/Pergolas';
 import DecksSection from './components/DecksSection';
 import GoogleReviewsSection from './components/GoogleReviewsSection';
 import FaqSection from './components/FaqSection';
-
 import Footer from './components/Footer';
+import WhatsAppButton from './components/WhatsAppButton'; // <-- IMPORTAR AQUÍ
 
 function App() {
   return (
-    <div className="min-h-screen flex flex-col bg-white">
+    <div className="min-h-screen flex flex-col bg-white relative">
       <Navbar />
       <main className="flex-grow">
         <Hero />
@@ -22,6 +22,7 @@ function App() {
         <FaqSection />
       </main>
       <Footer />
+      <WhatsAppButton /> {/* <-- AGREGAR AQUÍ */}
     </div>
   );
 }
