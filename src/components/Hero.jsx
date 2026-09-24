@@ -40,10 +40,11 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
             className="text-base sm:text-lg text-[#555555] !leading-[1.45] mb-6 max-w-lg"
           >
-            Pérgolas y decks de lujo para residencias y comercios exigentes.{' '}
+            Pérgolas, terrazas, decks y más... de lujo a medida para residencias y comercios exigentes.{' '}
             <strong className="font-medium text-gray-800">
               Diseñamos, fabricamos e instalamos en CDMX y Estado de México.
             </strong>
+
           </motion.p>
 
           {/* Botón CTA Cotizar Ahora */}

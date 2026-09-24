@@ -14,6 +14,7 @@ import img8 from '../assets/group-pergola/8.png';
 
 // Importación del video de la corrediza
 import videoRetractil from '../assets/group-pergola/video1.mp4';
+import videoRetractil2 from '../assets/group-pergola/video2.mp4';
 
 export default function Pergolas() {
   const pergolasData = [
@@ -27,9 +28,9 @@ export default function Pergolas() {
     {
       id: 2,
       title: 'Sombra Viva',
-      description: 'Calidez elegante del bambú con la durabilidad del aluminio, confort con estética natural.',
+      description: 'Diseños a medida que fusionan la calidez del bambú y la durabilidad del aluminio: confort con estética natural.',
       image: img2,
-      video: null,
+      video: videoRetractil,
     },
     {
       id: 3,
