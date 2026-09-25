@@ -189,8 +189,9 @@ function PergolaCard({ item, index, isMobile = false }) {
         </div>
       )}
 
-      {/* Overlay con Gradiente de Sombra para Lectura de Texto */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-transparent pointer-events-none transition-opacity duration-300" />
+      
+      {/* Overlay con Gradiente de Sombra ubicado solo en la parte inferior */}
+      <div className="absolute inset-x-0 bottom-0 h-3/5 bg-gradient-to-t from-black/90 via-black/50 to-transparent pointer-events-none transition-opacity duration-300" />
 
       {/* Contenido de Texto Inferior */}
       <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-7 z-10 text-white">
