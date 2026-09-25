@@ -30,7 +30,8 @@ export default function Pergolas() {
       title: 'Sombra Viva',
       description: 'Diseños a medida que fusionan la calidez del bambú y la durabilidad del aluminio: confort con estética natural.',
       image: img2,
-      video: videoRetractil,
+      video: videoRetractil2,
+      badge: 'Sistema Corredizo',
     },
     {
       id: 3,
