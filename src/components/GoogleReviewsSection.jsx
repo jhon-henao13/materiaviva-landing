@@ -151,6 +151,9 @@ const GoogleGLogo = () => (
 );
 
 export default function GoogleReviewsSection() {
+
+  const whatsappUrl = "https://wa.me/5215545703154?text=Hola%2C%20me%20gustar%C3%ADa%20solicitar%20una%20cotizaci%C3%B3n%20personalizada%20para%20mi%20proyecto%20de%20p%C3%A9rgola%20%2F%20deck.";
+
   const [filter, setFilter] = useState('all'); // 'all', 'with_photos'
   const [selectedImage, setSelectedImage] = useState(null);
   const [expandedReviews, setExpandedReviews] = useState({});
@@ -165,7 +168,7 @@ export default function GoogleReviewsSection() {
   };
 
   return (
-    <section className="bg-[#FAF8F5] text-stone-900 py-16 px-4 sm:px-6 lg:px-8 font-sans selection:bg-[#84CC16]/30">
+    <section id="resenas" className="bg-[#FAF8F5] text-stone-900 py-16 px-4 sm:px-6 lg:px-8 font-sans selection:bg-[#84CC16]/30">
       <div className="max-w-7xl mx-auto space-y-12">
         
         {/* TITULAR PRINCIPAL DE LA SECCIÓN */}
@@ -421,7 +424,9 @@ export default function GoogleReviewsSection() {
               </h3>
               
               <a
-                href="#cotizar"
+                href={whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-lg bg-[#96C122] hover:bg-[#85AB1E] text-white font-semibold text-sm shadow-md transition-all active:scale-[0.98]"
               >
                 <span>Cotizar Ahora</span>

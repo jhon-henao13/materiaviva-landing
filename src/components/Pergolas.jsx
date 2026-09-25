@@ -17,6 +17,9 @@ import videoRetractil from '../assets/group-pergola/video1.mp4';
 import videoRetractil2 from '../assets/group-pergola/video2.mp4';
 
 export default function Pergolas() {
+
+  const whatsappUrl = "https://wa.me/5215545703154?text=Hola%2C%20me%20gustar%C3%ADa%20solicitar%20una%20cotizaci%C3%B3n%20personalizada%20para%20mi%20proyecto%20de%20p%C3%A9rgola%20%2F%20deck.";
+
   const pergolasData = [
     {
       id: 1,
@@ -126,7 +129,9 @@ export default function Pergolas() {
           className="flex justify-center mt-6"
         >
           <motion.a
-            href="#cotizar"
+            href={whatsappUrl}
+            target="_blank"
+            rel="noopener noreferrer"
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.97 }}
             className="inline-flex items-center gap-3 px-8 py-3.5 bg-brand-green hover:bg-brand-green-hover text-white font-bold text-base rounded-lg shadow-md hover:shadow-xl transition-all duration-300 group"

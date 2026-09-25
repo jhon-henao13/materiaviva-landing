@@ -7,7 +7,7 @@ import DecksSection from './components/DecksSection';
 import GoogleReviewsSection from './components/GoogleReviewsSection';
 import FaqSection from './components/FaqSection';
 import Footer from './components/Footer';
-import WhatsAppButton from './components/WhatsAppButton'; // <-- IMPORTAR AQUÍ
+import WhatsAppButton from './components/WhatsAppButton';
 
 function App() {
   return (
@@ -22,7 +22,7 @@ function App() {
         <FaqSection />
       </main>
       <Footer />
-      <WhatsAppButton /> {/* <-- AGREGAR AQUÍ */}
+      <WhatsAppButton />
     </div>
   );
 }

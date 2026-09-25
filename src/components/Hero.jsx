@@ -5,6 +5,9 @@ import heroBg from '../assets/background-hero.png';
 import heroBgMobile from '../assets/background-hero.movil2.jpg';
 
 export default function Hero() {
+
+  const whatsappUrl = "https://wa.me/5215545703154?text=Hola%2C%20me%20gustar%C3%ADa%20solicitar%20una%20cotizaci%C3%B3n%20personalizada%20para%20mi%20proyecto%20de%20p%C3%A9rgola%20%2F%20deck.";
+
   return (
     <section className="relative min-h-[750px] lg:min-h-screen w-full flex items-end pt-28 pb-12 lg:pt-32 lg:pb-20 overflow-hidden bg-white">
       {/* Background Hero Images con Overlay de Degradado Suave */}
@@ -65,7 +68,9 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
           >
             <motion.a
-              href="#cotizar"
+              href={whatsappUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               whileHover={{ scale: 1.03, x: 3 }}
               whileTap={{ scale: 0.97 }}
               className="inline-flex items-center gap-3 px-4 py-2 bg-[#99c01c] hover:bg-[#7CB325] text-white font-bold text-base rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 group"

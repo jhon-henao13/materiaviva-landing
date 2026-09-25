@@ -74,7 +74,7 @@ export default function FaqSection() {
   };
 
   return (
-    <section className="bg-[#f8f5ee] py-20 px-4 md:px-8 lg:px-12 font-sans overflow-hidden">
+    <section id="faq" className="bg-[#f8f5ee] py-20 px-4 md:px-8 lg:px-12 font-sans overflow-hidden">
       <div className="max-w-5xl mx-auto space-y-12">
 
         {/* Encabezado Réplica Exacta de Titular */}

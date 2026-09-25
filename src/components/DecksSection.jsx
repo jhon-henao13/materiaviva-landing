@@ -9,6 +9,9 @@ import img3 from '../assets/group-decks/3.jpg';
 import img4 from '../assets/group-decks/4.jpg';
 
 export default function DecksSection() {
+
+  const whatsappUrl = "https://wa.me/5215545703154?text=Hola%2C%20me%20gustar%C3%ADa%20solicitar%20una%20cotizaci%C3%B3n%20personalizada%20para%20mi%20proyecto%20de%20p%C3%A9rgola%20%2F%20deck.";
+
   return (
     <section id="decks" className="py-20 md:py-28 bg-[#fbf8f1] relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
@@ -109,7 +112,9 @@ export default function DecksSection() {
                 className="flex items-center justify-start sm:justify-center p-2"
               >
                 <motion.a
-                  href="#cotizar"
+                  href={whatsappUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   whileHover={{ scale: 1.03 }}
                   whileTap={{ scale: 0.97 }}
                   className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-5 py-3 bg-brand-green hover:bg-brand-green-hover text-white font-bold text-base rounded-lg shadow-md hover:shadow-xl transition-all duration-300 group"
