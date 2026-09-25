@@ -31,31 +31,30 @@ export default function Navbar() {
 
   return (
     <header
-      className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/95 backdrop-blur-md shadow-sm py-3"
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/95 backdrop-blur-md ${
+        scrolled ? 'shadow-md py-3' : 'shadow-sm py-4'
+      }`}
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
-        {/* Logo */}
+        {/* Logo - Ajustado tamaño móvil */}
         <a href="#" className="flex items-center gap-2 group">
           <img
             src={logoColor}
             alt="Materia Viva"
-            className="h-4 md:h-7 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+            className="h-6 md:h-8 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
             onError={(e) => {
-              // Fallback por si la imagen aún no está cargada correctamente
               e.target.style.display = 'none';
             }}
           />
-          {/* Logo Fallback Texto elegante */}
-          
         </a>
 
-        {/* Links de Navegación Desktop */}
+        {/* Links de Navegación Desktop con línea inferior premium */}
         <nav className="hidden md:flex items-center gap-8 lg:gap-12">
           {navLinks.map((link) => (
             <a
               key={link.name}
               href={link.href}
-              className="text-gray-500 hover:text-gray-900 font-medium text-sm lg:text-base tracking-wide transition-colors duration-200"
+              className="relative text-gray-600 hover:text-gray-900 font-medium text-sm lg:text-base tracking-wide transition-colors duration-200 py-1 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-[#99c01c] hover:after:w-full after:transition-all after:duration-300"
             >
               {link.name}
             </a>
@@ -70,20 +69,25 @@ export default function Navbar() {
             rel="noopener noreferrer"
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.97 }}
-            className="inline-flex items-center justify-center px-6 py-2.5 bg-[#99c01c] hover:bg-[#7CB325] text-white font-semibold text-sm lg:text-base rounded-lg shadow-md hover:shadow-lg transition-all duration-200"
+            className="inline-flex items-center justify-center px-6 py-2.5 bg-[#99c01c] hover:bg-[#85a818] text-white font-semibold text-sm lg:text-base rounded-lg shadow-md hover:shadow-lg transition-all duration-200"
           >
             Cotizar Ahora
           </motion.a>
         </div>
 
-        {/* Botón Menú Móvil */}
+        {/* Botón Menú Móvil - Colores de marca actualizados */}
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="md:hidden text-gray-700 hover:text-gray-900 focus:outline-none p-2"
+          className="md:hidden text-gray-800 hover:text-[#99c01c] bg-gray-50 hover:bg-gray-100 p-2 rounded-lg transition-colors focus:outline-none"
           aria-label="Abrir menú"
         >
-          {mobileMenuOpen ? <X size={26} /> : <Menu size={26} />}
+          {mobileMenuOpen ? (
+            <X size={30} className="text-[#99c01c]" />
+          ) : (
+            <Menu size={30} className="text-[#99c01c]" />
+          )}
         </button>
+
       </div>
 
       {/* Menú Desplegable Móvil */}
@@ -101,23 +105,21 @@ export default function Navbar() {
                   key={link.name}
                   href={link.href}
                   onClick={() => setMobileMenuOpen(false)}
-                  className="text-gray-700 hover:text-[#8DC63F] font-medium text-lg py-1 border-b border-gray-50"
+                  className="text-gray-700 hover:text-[#99c01c] font-medium text-lg py-2 border-b border-gray-50 transition-colors"
                 >
                   {link.name}
                 </a>
               ))}
 
-              
               <a
                 href={whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setMobileMenuOpen(false)}
-                className="mt-2 text-center py-3 bg-[#99c01c] text-white font-semibold rounded-lg shadow block"
+                className="mt-2 text-center py-3 bg-[#99c01c] hover:bg-[#85a818] text-white font-semibold rounded-lg shadow block transition-colors"
               >
                 Cotizar Ahora
               </a>
-              
             </div>
           </motion.div>
         )}
