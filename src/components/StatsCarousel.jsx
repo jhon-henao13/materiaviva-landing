@@ -17,25 +17,25 @@ import img12 from '../assets/group-carrusel/12.jpeg';
 
 export default function StatsCarousel() {
   const images = [
-    { id: 1, src: img1, title: 'Pérgola Bioclimática', code: '01/' },
-    { id: 2, src: img2, title: 'Deck Sintético Premium', code: '02/' },
-    { id: 3, src: img3, title: 'Pérgola Residencial', code: '03/' },
-    { id: 4, src: img4, title: 'Terraza Comercial', code: '04/' },
-    { id: 5, src: img5, title: 'Deck Madera Cumarú', code: '05/' },
-    { id: 6, src: img6, title: 'Pérgola Retráctil', code: '06/' },
-    { id: 7, src: img7, title: 'Proyecto Exterior CDMX', code: '07/' },
-    { id: 8, src: img8, title: 'Deck Flotante', code: '08/' },
-    { id: 9, src: img9, title: 'Estructura Aluminio', code: '09/' },
-    { id: 10, src: img10, title: 'Pérgola Minimalista', code: '10/' },
-    { id: 11, src: img11, title: 'Deck & Pergola Integra', code: '11/' },
-    { id: 12, src: img12, title: 'Pérgola con Iluminación LED', code: '12/' },
+    { id: 1, src: img1, title: 'Velaria Arquitectónica', code: '01/' },
+    { id: 2, src: img2, title: 'Velaria Arquitectónica', code: '02/' },
+    { id: 3, src: img3, title: 'Remodelación Completa', code: '03/' },
+    { id: 4, src: img4, title: 'Pérgola de Vidrio Templado', code: '04/' },
+    // { id: 5, src: img5, title: 'Deck Madera Cumarú', code: '05/' },
+    { id: 6, src: img6, title: 'Pérgola Híbrida', code: '05/' },
+    { id: 7, src: img7, title: 'Proyecto Exterior', code: '06/' },
+    { id: 8, src: img8, title: 'Pérgola de Madera', code: '07/' },
+    { id: 9, src: img9, title: 'Pérgola Híbrida', code: '08/' },
+    { id: 10, src: img10, title: 'Pérgola Sombra Viva', code: '09/' },
+    { id: 11, src: img11, title: 'Sauna', code: '10/' },
+    { id: 12, src: img12, title: 'Pérgola Híbrida', code: '11/' },
   ];
 
   // Duplicamos el array para lograr el bucle infinito perfecto e imperceptible
   const carouselList = [...images, ...images];
 
   return (
-    <section className="py-20 md:py-28 bg-white overflow-hidden relative">
+    <section className="py-16 md:py-24 bg-white overflow-hidden relative">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         
         {/* SECCIÓN 1: Estadísticas (Métricas) */}

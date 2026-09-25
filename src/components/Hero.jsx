@@ -24,7 +24,7 @@ export default function Hero() {
         />
 
         {/* Degradado responsivo móvil: Concentrado abajo-izquierda con efecto blur */}
-        <div className="absolute inset-x-0 bottom-0 h-4/5 bg-gradient-to-t from-white/90 via-white/70 to-transparent block md:hidden" />
+        <div className="absolute inset-x-0 bottom-0 h-4/5 bg-gradient-to-t from-white/90 via-white/85 to-transparent block md:hidden" />
         
         {/* Degradado Desktop (sin cambios) */}
         <div className="absolute inset-0 bg-gradient-to-r from-white via-white/85 sm:via-white/70 to-transparent hidden md:block w-3/4 lg:w-3/5 h-full" />
