@@ -41,7 +41,7 @@ export default function Navbar() {
           <img
             src={logoColor}
             alt="Materia Viva"
-            className="h-6 md:h-8 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+            className="h-8 md:h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
             onError={(e) => {
               e.target.style.display = 'none';
             }}
