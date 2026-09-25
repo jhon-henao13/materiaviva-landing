@@ -183,7 +183,7 @@ export default function GoogleReviewsSection() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           
           {/* TARJETA DE RESUMEN GOOGLE (IZQUIERDA) */}
-          <div className="lg:col-span-4 bg-white rounded-3xl p-6 sm:p-8 shadow-xl shadow-stone-200/50 border border-stone-200/80 space-y-6 sticky top-8">
+          <div className="lg:col-span-4 bg-white rounded-3xl p-6 sm:p-8 shadow-xl shadow-stone-200/50 border border-stone-200/80 space-y-6 static lg:sticky lg:top-20">
             <div className="flex items-center gap-4">
               <div className="relative">
                 <div className="w-16 h-16 rounded-2xl bg-stone-900 text-white flex items-center justify-center font-bold text-xl shadow-md border-2 border-[#84CC16]">
@@ -431,7 +431,6 @@ export default function GoogleReviewsSection() {
 
           </div>
         </div>
-
 
       </div>
 
