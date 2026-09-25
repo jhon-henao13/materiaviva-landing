@@ -2,18 +2,18 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 // Importación de las 12 imágenes con sus extensiones exactas
-import img1 from '../assets/group-carrusel/1.JPG';
-import img2 from '../assets/group-carrusel/2.JPG';
-import img3 from '../assets/group-carrusel/3.jpeg';
-import img4 from '../assets/group-carrusel/4.jpeg';
-import img5 from '../assets/group-carrusel/5.jpeg';
-import img6 from '../assets/group-carrusel/6.jpeg';
-import img7 from '../assets/group-carrusel/7.jpeg';
-import img8 from '../assets/group-carrusel/8.jpeg';
-import img9 from '../assets/group-carrusel/9.jpeg';
-import img10 from '../assets/group-carrusel/10.jpeg';
-import img11 from '../assets/group-carrusel/11.jpeg';
-import img12 from '../assets/group-carrusel/12.jpeg';
+import img1 from '../assets/group-carrusel/1.webp';
+import img2 from '../assets/group-carrusel/2.webp';
+import img3 from '../assets/group-carrusel/3.webp';
+import img4 from '../assets/group-carrusel/4.webp';
+import img5 from '../assets/group-carrusel/5.webp';
+import img6 from '../assets/group-carrusel/6.webp';
+import img7 from '../assets/group-carrusel/7.webp';
+import img8 from '../assets/group-carrusel/8.webp';
+import img9 from '../assets/group-carrusel/9.webp';
+import img10 from '../assets/group-carrusel/10.webp';
+import img11 from '../assets/group-carrusel/11.webp';
+import img12 from '../assets/group-carrusel/12.webp';
 
 export default function StatsCarousel() {
   const images = [

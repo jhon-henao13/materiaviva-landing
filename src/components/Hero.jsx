@@ -1,8 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
-import heroBg from '../assets/background-hero.png';
-import heroBgMobile from '../assets/background-hero.movil2.jpg';
+import heroBg from '../assets/background-hero.webp';
+import heroBgMobile from '../assets/background-hero.movil2.webp';
 
 export default function Hero() {
 

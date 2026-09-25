@@ -3,10 +3,10 @@ import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 
 // Importación de las 4 imágenes de la sección
-import img1 from '../assets/group-decks/1.jpg';
-import img2 from '../assets/group-decks/2.jpg';
-import img3 from '../assets/group-decks/3.jpg';
-import img4 from '../assets/group-decks/4.jpg';
+import img1 from '../assets/group-decks/1.webp';
+import img2 from '../assets/group-decks/2.webp';
+import img3 from '../assets/group-decks/3.webp';
+import img4 from '../assets/group-decks/4.webp';
 
 export default function DecksSection() {
 

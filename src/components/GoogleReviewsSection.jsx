@@ -12,7 +12,7 @@ import {
   Sparkles
 } from 'lucide-react';
 
-import reviewImg from '../assets/review.png';
+import reviewImg from '../assets/review.webp';
 
 // Datos de las reseñas reales de Materia Viva con sus imágenes adjuntas
 const REVIEWS_DATA = [

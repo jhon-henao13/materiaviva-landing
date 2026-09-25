@@ -3,14 +3,14 @@ import { motion } from 'framer-motion';
 import { ArrowRight, Play } from 'lucide-react';
 
 // Importación de imágenes
-import img1 from '../assets/group-pergola/1.png';
-import img2 from '../assets/group-pergola/2.png';
-import img3 from '../assets/group-pergola/3.png';
-import img4 from '../assets/group-pergola/4.png';
-import img5 from '../assets/group-pergola/5.png';
-import img6 from '../assets/group-pergola/6.png';
-import img7 from '../assets/group-pergola/7.png';
-import img8 from '../assets/group-pergola/8.png';
+import img1 from '../assets/group-pergola/1.webp';
+import img2 from '../assets/group-pergola/2.webp';
+import img3 from '../assets/group-pergola/3.webp';
+import img4 from '../assets/group-pergola/4.webp';
+import img5 from '../assets/group-pergola/5.webp';
+import img6 from '../assets/group-pergola/6.webp';
+import img7 from '../assets/group-pergola/7.webp';
+import img8 from '../assets/group-pergola/8.webp';
 
 // Importación del video de la corrediza
 import videoRetractil from '../assets/group-pergola/video1.mp4';
