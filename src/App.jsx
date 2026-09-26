@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import StatsCarousel from './components/StatsCarousel';
 import Pergolas from './components/Pergolas';
+import VideoSection from './components/VideoSection';
 import DecksSection from './components/DecksSection';
 import GoogleReviewsSection from './components/GoogleReviewsSection';
 import FaqSection from './components/FaqSection';
@@ -17,6 +18,7 @@ function App() {
         <Hero />
         <StatsCarousel />
         <Pergolas />
+        <VideoSection />
         <DecksSection />
         <GoogleReviewsSection />
         <FaqSection />
